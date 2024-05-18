@@ -1,0 +1,602 @@
+{%extends 'main.html'%} {%load static%} {%block content%}
+<style>
+  body {
+    background-color: white;
+  }
+  .yellowline {
+    size: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+  .des {
+    padding: 20px;
+    font-size:14px;
+  }
+  video {
+    height: 50vw;
+  }
+  .co-header2 {
+    padding-top: 20px;
+  }
+  .text-center{
+    font-size:12px;
+    }
+  .num {
+    position: relative;
+    font-size: 18px;
+    height: 40px;
+  }
+  .country {
+    position: relative;
+    font-size: 20px;
+    height: 40px;
+  }
+  .country-text {
+    text-align: justify;
+    font-size:14px;
+  }
+  .picture {
+    display: block;
+    width: 22vw;
+    height: 15vw;
+    padding: 5px;
+  }
+
+  .icon {
+    position: relative;
+    width: 100%;
+  }
+
+  .banner {
+    position: relative;
+    top: 19%;
+    justify: center;
+    color: white;
+    padding: 30px;
+    background-color: rgb(254, 206, 9);
+  }
+  .caption {
+    text-align: center;
+    font-size: 40px;
+  }
+  .company {
+    padding-bottom: 10px;
+  }
+  .decade {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+  }
+  .decade-image {
+    width: 80vw;
+    margin: 20px 40px;
+  }
+  .spacer-custom {
+    position: relative;
+    height: 30px;
+  }
+  .knowimage
+  {
+      width:40vw;
+  }
+  .success{
+      background-color:white;
+  }
+  .picture{
+      height:140px;
+  }
+  .des{
+      font-size:14px;
+  }
+  
+
+
+  @media screen and (max-width: 480px) {
+    .picture {
+        display: block;
+        width: 100vw;
+        height: 60vw;
+        padding: 5px;
+      }
+      .knowimage
+        {
+            width:40vw;
+        }
+  }
+
+</style>
+<br />
+<br />
+
+<div class="company row justify-content-center m-0">
+  <div class="co-header1 col-11">
+    <h6>خدمات</h6>
+  </div>
+  <hr size="10" color="#ffcc00" />
+
+  <div class="co-header2 col-11">
+    <h5>کلکسیون خدمات حمل و نقل کندر</h5>
+  </div>
+
+  <div class="des col-11">
+    <p>
+      با خدمات سفارشی و سالها تجربه در بخش حمل و نقل و ارتباطات، ما در کندر در
+      حال پیشرفت هستیم و به بازارهای جدید امیدوار کننده ای دست می زنیم. برای ما،
+      چالش توسعه راه‌حل‌های حمل‌ونقل سفارشی برای شرکای تجاری و مشتریان ما فقط یک
+      کار روزانه نیست. این مفهوم شعاری است که ما بر اساس آن کار می کنیم، اساس
+      همه روابط دیرینه ما و فرمول ما برای موفقیت است.
+    </p>
+  </div>
+</div>
+
+<div
+  class="services row col-12 justify-content-center align-items-start"
+  dir="ltr"
+>
+  <div class="row col-lg-4 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/full-truck.svg'%}" alt="" />
+    </div>
+    <div class="num text-center col-12">کامیون کامل</div>
+    <div class="text-center col-12" dir="rtl">
+      خدمات حمل و نقل بسیار مطمئن و ممتاز به و از شرق اروپا، بالکان، ترکیه و
+      آسیای مرکزی چیزی است که باعث شهرت ما به عنوان متخصصان شرق شده است. البته
+      ما تقریباً در تمام مقاصد اروپای غربی نیز فعالیت می کنیم.
+    </div>
+  </div>
+
+  <div class="row col-lg-4 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/partial-truck.svg'%}" alt="" />
+    </div>
+    <div class="num text-center col-12">بخشی از کامیون</div>
+    <div class="text-center col-12" dir="rtl">
+      تصور کنید: شما از آذربایجان برای باغچه ی یک خانه ی دو هزار متری لوله ی
+      آبیاری سفارش می گیرید. آیا می خواهید یک کامیون کامل برای آن اجاره کنید؟ یا
+      ترجیح می دهید فقط به اندازه فضای بارگیری که نیاز دارید بپردازید... کندر
+      بارهای جزئی و کوچک را تقریباً در هر ابعادی می پذیرد.
+    </div>
+  </div>
+
+  <div class="row col-lg-4 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/groupage.svg'%}" alt="" />
+    </div>
+    <div class="num text-center col-12">گروپیج</div>
+    <div class="text-center col-12" dir="rtl">
+      ما خدمات گروهی را با پروازهای منظم برای مقاصد اصلی خود ارائه می دهیم:
+      روسیه، اوکراین، آسیای مرکزی / کشورهای مستقل مشترک المنافع، بالکان.
+    </div>
+  </div>
+
+  <div class="row col-lg-4 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/heavy-special.svg'%}" alt="" />
+    </div>
+    <div class="num text-center col-12">حمل و نقل سنگین یا خاص</div>
+    <div class="text-center col-12" dir="rtl">
+      می خواهید ستون های یک پل را به ایران بفرستید؟ مشکلی نیست چه بزرگ و چه
+      بسیار سنگین - ما راه حل مناسبی برای نیازهای خاص شما داریم.
+    </div>
+  </div>
+
+  <div class="row col-lg-4 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img
+        class="icon"
+        src="{%static 'wp/images/certifications.svg'%}"
+        alt=""
+      />
+    </div>
+    <div class="num text-center col-12">کاغذبازی برای بازار روسیه</div>
+    <div class="text-center col-12" dir="rtl">
+      انواع کالاهای وارد شده به بازار روسیه مشمول گواهینامه می باشند. کندر برای
+      تأیید سریع و مطمئن کالاهای شما، چه برای انطباق GOST-R، بهداشت، ایمنی آتش
+      نشانی، TR، بهداشت گیاهی و غیره کمک می کند.
+    </div>
+  </div>
+
+  <div class="row col-lg-4 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/ddp.svg'%}" alt="" />
+    </div>
+    <div class="num text-center col-12">DDP خدمات</div>
+    <div class="text-center col-12" dir="rtl">
+      با خدمات DDP ما این امکان را دارید که کالاهای خود را به مشتریان روسی خود
+      یا به شعبه خود در روسیه تحویل دهید DDP (وظیفه پرداخت شده و تأیید شده). به
+      عنوان بخشی از خدمات DDP، قطعات گارانتی و تعویض نیز می توانند به راحتی به
+      روسیه ارسال شوند، وظیفه پرداخت می شود.
+    </div>
+  </div>
+
+  <div class="row col-lg-4 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/refregrated.svg'%}" alt="" />
+    </div>
+    <div class="num text-center col-12">کامیون های یخچال دار یا ایزوله</div>
+    <div class="text-center col-12" dir="rtl">
+      خاویار اصلی بلوگا از دریای خزر؟ اگر تازه وارد شود بهتر است. ناوگان بزرگ
+      کامیون های عایق حرارتی ما در اختیار شماست.
+    </div>
+  </div>
+
+  <div class="row col-lg-4 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/document.svg'%}" alt="" />
+    </div>
+    <div class="num text-center col-12">صدور اسناد و انجام امور گمرکی</div>
+    <div class="text-center col-12" dir="rtl">
+      ندور در صدور اسناد حمل و نقل مورد نیاز محموله شما کمک می کند و با استفاده
+      از جدیدترین سیستم های الکترونیکی گمرک ترخیص کالا از گمرک را انجام می دهد.
+    </div>
+  </div>
+
+  <div class="row col-lg-4 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/hazardous.svg'%}" alt="" />
+    </div>
+    <div class="num text-center col-12">کالاهای خطرآفرین</div>
+    <div class="text-center col-12" dir="rtl">
+      ایمنی حمل و نقل نقش مهمی در فلسفه شرکت ما دارد. دستورالعمل های جدید و
+      سختگیرانه ای به خصوص برای حمل و نقل کالاها و مواد خطرناک معرفی شده است. به
+      لطف همکاری ما با افسران ایمنی اتحادیه اروپا، حمل و نقل کالاهای خطرناک شما
+      در بهترین حالت قرار دارد.
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="company row justify-content-center m-0" dir="rtl">
+    <div class="co-header1 col-11">
+      <h6>محدوده ی فعالیت</h6>
+    </div>
+    <hr size="10" color="#ffcc00" />
+
+    <div class="co-header2 col-10">
+      <h5>شرکت قابل اتکایی که حد و مرز نمی شناسد</h5>
+    </div>
+
+    <div class="des col-11">
+      <p>
+        پس از سقوط پرده آهنین، کندور یکی از شرکت‌های کشتیرانی پیشرو بود که به
+        سمت مقصدهایی در این مناطق تلاش کرد. از طریق یک استراتژی هوشمندانه نوآوری
+        و جاه طلبی، ما توانستیم به بازارهای دست نخورده دسترسی داشته باشیم و در
+        طول سال ها فرصت های اقتصادی جدیدی را در آنجا ایجاد کنیم. کوندور متعهد به
+        کشف بزرگترین پتانسیل رشد در چنین کشورهایی و کمک به ارائه راه حل های
+        آینده محور به این بازارهای تازه در حال ظهور است. اروپای مرکزی و شرقی |
+        خاورمیانه | بالکان | اروپای غربی | کشورهای مستقل مشترک المنافع | شمال
+        آفریقا
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--COUNTRIES-->
+
+<div class="services row col-12 justify-content-center align-items-start">
+  <div class="row col-12  justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/russia.jpeg'%}" alt="" />
+    </div>
+    <div class="row col-lg-8 col-md-8 col-12">
+      <div class="country col-12">روسیه</div>
+      <div class="country-text col-12">
+        پس از انحلال اتحاد جماهیر شوروی، روسیه و کشورهای مشترک المنافع دوران
+        پرتلاطمی را پشت سر گذاشتند: توسعه، رشد اقتصادی، بحران مالی و سپس درگیری
+        با کریمه و اوکراین - اوج و فرودهای عمده تنها در دو و -یک و نیم دهه علاوه
+        بر این، کاهش تولید صنعتی، نرخ بالای بیکاری و جرم و جنایت، و عرضه
+        ناکارآمد کشاورزی دقیقاً انجام تجارت در آنجا را آسان نکرده است. با وجود
+        همه اینها، کشورهای CIS پتانسیل روزافزونی را به عنوان شرکای اقتصادی جالب
+        برای غرب در آینده نشان می دهند. به لطف اتحادیه اقتصادی اوراسیا، یک بازار
+        جدید، واحد و یکسان با 185 میلیون نفر در حال ظهور است. Condor خدمات حمل و
+        نقل را در تمام کشورهای CIS از جمله: ارمنستان، آذربایجان، گرجستان،
+        قزاقستان، قرقیزستان، مولداوی، روسیه، تاجیکستان، ترکمنستان، اوکراین،
+        ازبکستان و بلاروس ارائه می دهد. به منظور ارائه راه حل های عالی برای حتی
+        پیچیده ترین حمل و نقل، شرکت ما دفاتر خود را در مسکو و کازان با تیم های
+        محلی در محل نگهداری می کند.
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-custom"></div>
+
+  <div class="row col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/central.jpeg'%}" alt="" />
+    </div>
+    <div class="row col-lg-8 col-md-8 col-12">
+      <div class="country col-12">اروپای مرکزی و شرقی</div>
+      <div class="country-text col-12">
+        تقاضاهای یک شرکت حمل و نقل می تواند در بازارهای خاص به سرعت تغییر کند که
+        اطلاعات بهینه در مورد تحولات در چنین مناطقی برای کمک به رقابت پذیری آن
+        حیاتی است. در Condor نمایندگان ما تمام زبان‌های رایج در اروپای شرقی را
+        پوشش می‌دهند، بنابراین ما می‌توانیم به سرعت و آسانی به شرایط متغیر پاسخ
+        دهیم. مجارستان، لهستان، جمهوری چک، لتونی و همکاران هنوز هم بازارهای
+        بسیار امیدوار کننده ای در نظر گرفته می شوند. مرحله حساس بازسازی آنها پشت
+        سر گذاشته شده است، بنابراین آنها می توانند انتظار رشد اقتصادی قوی را در
+        آینده نزدیک داشته باشند. Condor راه حل های تدارکات سفارشی را ارائه می
+        دهد، بنابراین همه می توانند از این موهبت بهره مند شوند.
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-custom"></div>
+
+  <div class="row col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/balkans.jpeg'%}" alt="" />
+    </div>
+    <div class="row col-lg-8 col-md-8 col-12">
+      <div class="country col-12">بالکان</div>
+      <div class="country-text col-12">
+        کندور از زمان تأسیس این شرکت در سال 1976 در بالکان فعال بوده است - مدت
+        ها قبل از انفجار انبار باروت بالکان. با همه زبان های منطقه ای ارائه شده،
+        ما حمل و نقل ایمن و قابل اعتماد را در داخل بالکان تضمین می کنیم. حتی در
+        جایی که خطرات در مناطق بحران زده خاص در منطقه همچنان وجود دارد، با
+        Condor نیازی به نگرانی در مورد ایمنی حمل و نقل بار نیست. Condor حمل و
+        نقل را به اسلوونی، کرواسی، بوسنی و هرزگوین، مقدونیه، صربستان، کوزوو،
+        آلبانی، یونان، رومانی، بلغارستان و ترکیه ارائه می دهد.
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-custom"></div>
+
+  <div class="row col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/balkans.jpeg'%}" alt="" />
+    </div>
+    <div class="row col-lg-8 col-md-8 col-12">
+      <div class="country col-12">بالکان</div>
+      <div class="country-text col-12">
+        کندور از زمان تأسیس این شرکت در سال 1976 در بالکان فعال بوده است - مدت
+        ها قبل از انفجار انبار باروت بالکان. با همه زبان های منطقه ای ارائه شده،
+        ما حمل و نقل ایمن و قابل اعتماد را در داخل بالکان تضمین می کنیم. حتی در
+        جایی که خطرات در مناطق بحران زده خاص در منطقه همچنان وجود دارد، با
+        Condor نیازی به نگرانی در مورد ایمنی حمل و نقل بار نیست. Condor حمل و
+        نقل را به اسلوونی، کرواسی، بوسنی و هرزگوین، مقدونیه، صربستان، کوزوو،
+        آلبانی، یونان، رومانی، بلغارستان و ترکیه ارائه می دهد.
+      </div>
+    </div>
+  </div>
+
+  <div class="spacer-custom"></div>
+    
+  <div class="row col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+        <img class="icon" src="{%static 'wp/images/western.jpeg'%}" alt="" />
+    </div>
+
+    <div class="row col-lg-8 col-md-8 col-12">
+        <div class="country col-12">اروپای غربی</div>
+        <div class="country-text col-12">
+            با وجود مرزهای باز، شرکت های حمل و نقلی که در اروپای غربی کار می کنند با
+            تقاضاهای پیچیده تری روبرو هستند. امروزه، با وجود اینکه شرایط متفاوت است،
+            اروپای غربی می‌تواند مانند اروپای شرقی چالش بزرگی ایجاد کند: فشار رقابت
+            بسیار زیاد است و تنها کسانی می‌توانند موفق شوند که از هر نظر چیزهای بیشتری
+            ارائه دهند. وقت شناسی، انعطاف پذیری و قابلیت اطمینان در بخش حمل و نقل
+            اساسی است، اما آنها فقط پیچ و مهره هستند. در Condor، ما طیف گسترده ای از
+            امکانات اضافی را در سراسر اروپای غربی ارائه می دهیم. علاوه بر این، همه
+            زبان‌ها نشان داده می‌شوند که پردازش سفارش در اروپای غربی را به طور
+            قابل‌توجهی سریع‌تر و آسان‌تر می‌کند.
+        </div>
+    </div>
+    </div>
+
+    
+
+  <div class="spacer-custom"></div>
+
+  <div class="row col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/middle.jpeg'%}" alt="" />
+    </div>
+    <div class="row col-lg-8 col-md-8 col-12">
+      <div class="country col-12">خاور میانه</div>
+      <div class="country-text col-12">
+        خاورمیانه زادگاه بسیاری از تمدن ها و ادیان است. اینجاست که الفبای ما،
+        ریاضیات، مسیحیت، اسلام و آغاز درک ما از سیاست منشأ خود را نشان می دهد.
+        علاوه بر این، خاورمیانه دارای پتانسیل اقتصادی عظیمی است. به هر حال،
+        تجارت عمیقاً در ذهنیت مردمی که در شبه جزیره عربستان و اطراف آن زندگی می
+        کنند، ریشه دارد. آشنایی با این ذهنیت، آداب و رسوم و زبان های محلی چیزی
+        است که Condor را سال ها به یک شریک اقتصادی جالب و کاملاً پذیرفته شده در
+        اینجا تبدیل کرده است. اگرچه این منطقه کانون بحران بوده است، اما حتی در
+        اینجا ما می توانیم امنیت سفارش شما را تضمین کنیم. Condor محموله هایی را
+        در سراسر خاورمیانه با تمرکز بر ایران، عراق و ترکیه ارائه می دهد.
+      </div>
+    </div>
+
+    <div class="spacer-custom"></div>
+
+    <div class="row col-12 justify-content-center">
+      <div class="picture d-flex justify-content-center col-12">
+        <img class="icon" src="{%static 'wp/images/north.jpeg'%}" alt="" />
+      </div>
+      <div class="row col-lg-8 col-md-8 col-12">
+        <div class="country col-12">آفریقای شمالی</div>
+        <div class="country-text col-12">
+          Condor متخصص حمل و نقل شمال آفریقا از سراسر اروپا است. به لطف شعبه های
+          خود در فرانسه، ما ارتباطات شایسته و با تجربه ای با شمال آفریقا داریم.
+          تمرکز ما روی کشورهای مراکش، الجزایر، لیبی و تونس است.
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+ 
+</div>
+
+<div class="row col-12 justify-content-center m-0 p-0">
+    <img class="m-0 p-0" src="{%static 'wp/images/solutions.jpeg'%}" alt="" />
+    <div class="banner">
+      <h1>
+        <p class="caption">
+            از کازان تا نانت، هر چه یک جابجایی دشوار تر و پیچیده تر باشد، کندر برای قبول آن مشتاق تر است.
+        </p>
+      </h1>
+    </div>
+</div>
+
+<!--PROCESS-->
+<div class="spacer"></div>
+<div class="company row justify-content-center m-0" dir="rtl">
+    <div class="co-header1 col-11">
+      <h6>شیوه</h6>
+    </div>
+    <hr size="10" color="#ffcc00" />
+
+    <div class="co-header2 col-11">
+      <h4>شیوه ی ما برای یک جابجایی مطمئن</h4>
+    </div>
+
+    <div class="des col-11">
+        <p>
+      
+            برنامه SQAS مناطق زیر را نظارت می کند:
+            <br>
+            <br>
+            مدیریت
+            <br>
+            مقررات ایمنی، بهداشت و محیط زیست
+            <br>
+            امنیت
+            <br>
+            مدیریت زنجیره تامین
+            <br>
+            تجهیزات
+            <br>
+            اقدامات ایمنی پیشگیرانه
+            <br>
+            امنیت در حمل و نقل
+            <br>
+            دستورالعمل های عملیاتی
+            <br>
+            پردازش و ارسال سفارش
+            <br>
+            خدمات ویژه حمل و نقل
+            <br>
+            امکانات تولید / بازرسی
+            <br>
+            دانلود گواهینامه ها
+            <br>
+            گواهی SQAS
+            <br>
+            گواهینامه ISO 9001:2015 | IQ خالص
+            <br>
+            گواهی ISO 14001:2015
+            <br>
+            گواهی ISO 45001:2018
+            <br>
+            گواهی AEOF
+          </p>
+    </div>
+</div>
+
+<!--Know How-->
+<hr>
+<div class="row justify-content-center m-0">
+    <div class="col-5">
+        <img class="knowimage d-md-flex d-lg-flex d-none" src="{%static 'wp/images/know-how-image.png'%}" alt="">
+    </div>
+    <div class="col-5">
+        <img class="knowimage" src="{%static 'wp/images/know-how-list.png'%}" alt="">
+    </div>
+    
+</div>
+
+<!--CASE STUDIES-->
+<div class="success col-12">
+    <div class="title col12 text-center">
+      <h3>کیس استادی</h3>
+    </div>
+    {% comment %} <div class="cap col12">
+      <h6>
+        <p>
+          انتظار کشیدن سخته. بخصوص وقتی آدم منتظر رسیدن یک چیز مهم، از یک راه
+          دور باشه. کندر این موضوع رو خیلی خوب می دونه. به همین دلیل سریع ترین
+          هواپیما ها و کشتی ها و خودرو ها رو در اختیار گرفته،‌تا شما منتظر
+          نمونین. هر وقت خواستین چیز ارزشمندی رو سریع به مقصد برسونین، می
+          تونین روی کندر حساب کنین.
+        </p>
+        <p>
+          قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا براتون
+          نوشتیم. اگر دلتون می خواد با چند تا از کارای خفن کندر توی ایران و
+          کشور های دیگه آشنا بشین نگاهی به این چند مورد بندازین:
+        </p>
+      </h6>
+    </div> {% endcomment %}
+
+    <div class="row stories col-12 justify-content-center m-0">
+      <div class="card col-sm-12 col-md-2 col-lg-4 m-2" style="width: 18rem">
+        <img
+          class="card-img-top p-2"
+          src="{%static 'wp/images/slider03.jpeg'%}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">عنوان</h5>
+          {% comment %} <p class="card-text">
+            قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا
+            براتون نوشتیم.
+          </p>
+          <a href="#" class="btn btn-primary">عنوان</a> {% endcomment %}
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-2 col-lg-4 m-2" style="width: 18rem">
+        <img
+          class="card-img-top p-2"
+          src="{%static 'wp/images/slider04.jpeg'%}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">عنوان</h5>
+          {% comment %} <p class="card-text">
+            قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا
+            براتون نوشتیم.
+          </p>
+          <a href="#" class="btn btn-primary">عنوان</a> {% endcomment %}
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-2 col-lg-4 m-2" style="width: 18rem">
+        <img
+          class="card-img-top p-2"
+          src="{%static 'wp/images/slider05.jpeg'%}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">عنوان</h5>
+          {% comment %} <p class="card-text">
+            قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا
+            براتون نوشتیم.
+          </p>
+          <a href="#" class="btn btn-primary">عنوان</a> {% endcomment %}
+        </div>
+      </div>
+
+      <div class="card col-sm-12 col-md-2 col-lg-4 m-2" style="width: 18rem">
+        <img
+          class="card-img-top p-2"
+          src="{%static 'wp/images/slider06.jpeg'%}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">عنوان</h5>
+          {% comment %} <p class="card-text">
+            قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا
+            براتون نوشتیم.
+          </p>
+          <a href="#" class="btn btn-primary">عنوان</a> {% endcomment %}
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+
+
+{%endblock content%}

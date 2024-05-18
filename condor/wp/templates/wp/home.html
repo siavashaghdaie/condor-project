@@ -1,0 +1,368 @@
+{% extends 'main.html' %} {%load static%}
+{% block content %}
+
+
+<style>
+  video{
+    height:50vw;
+  }
+  .video {
+      margin: 0;
+      padding: 60px;
+      background-color: rgb(254, 206, 9);
+    }
+  .slidercaption{
+    z-index: 100;
+    font-size: 30px;
+    position:relative;
+    top:-53vw;
+    right:5vw;
+    width:40vw;
+  }
+  .cap{
+    margin: 3vh;
+    padding:0vw 25vw;
+    text-align: center;
+    font-size:12px;
+  }
+  .card-text{
+    font-size:12px;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .slidercaption{
+      z-index: 100;
+      font-size: 12px;
+      position:relative;
+      top:-53vw;
+      right:5vw;
+      width:60vw;
+    }
+    .cap{
+      margin: 3vh;
+      padding:0vw 15vw;
+      text-align: center;
+      font-size:12px;
+    }
+  }
+</style>
+    <!--SLIDER-->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="{%static 'wp/images/slider03.jpeg'%}"
+            class="slider-image d-block w-100"
+            alt="..."
+          />
+          <div class="slidercaption">
+            <h1>
+            یک چالش لاجستیکی؛
+            </h1>
+            نمایش تخصص اتریشی در مسابقات فیگور
+            <br>
+            اسکیت مینسک.
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{%static 'wp/images/slider04.jpeg'%}"
+            class="slider-image d-block w-100"
+            alt="..."
+          />
+          <div class="slidercaption">
+            <h1>
+            کویر نوردی با تمام قوا؛    
+            </h1>
+          
+       
+            اما ماشین های آفرود چگونه به قزاقستان
+            <br>
+              می رسند؟
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{%static 'wp/images/slider05.jpeg'%}"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="slidercaption ">
+            <h1>
+              همپای ستارگان؛
+            </h1>
+            تیم ملی اتریش چگونه لباس و تجهیزاتش را
+            به محل مسابقات انتقال می دهد؟
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="{%static 'wp/images/slider06.jpeg'%}"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="slidercaption">
+            <h1>
+              نبرد با یخ؛    
+              </h1>
+              کندر چگونه برای نبرد با سرمای روسیه      
+              <br>
+                به آئودی کمک کرد؟  
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--SUCCESS-->
+    <div class="success col-12 justify-content-center ">
+      <div class="title col12 text-center ">
+        <h2>حال خوب به سبک کندر</h2>
+      </div>
+      <div class="cap col12">
+        
+          <p>
+            انتظار کشیدن سخته. بخصوص وقتی آدم منتظر رسیدن یک چیز مهم، از یک راه
+            دور باشه. کندر این موضوع رو خیلی خوب می دونه. به همین دلیل سریع ترین
+            هواپیما ها و کشتی ها و خودرو ها رو در اختیار گرفته،‌تا شما منتظر
+            نمونین. هر وقت خواستین چیز ارزشمندی رو سریع به مقصد برسونین، می
+            تونین روی کندر حساب کنین.
+          </p>
+          <p>
+            قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا براتون
+            نوشتیم. اگر دلتون می خواد با چند تا از کارای خفن کندر توی ایران و
+            کشور های دیگه آشنا بشین نگاهی به این چند مورد بندازین:
+          </p>
+        
+      </div>
+
+      <div class="row stories col-12 justify-content-center m-0">
+        <div class="card col-sm-12 col-md-2 col-lg-3 m-2" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="{%static 'wp/images/slider01.jpeg'%}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h6 class="card-title">عنوان</h6>
+            {% comment %} <p class="card-text">
+              قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا
+              براتون نوشتیم.
+            </p>
+            <a href="#" class="btn btn-primary">می خونم</a> {% endcomment %}
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-2 col-lg-3 m-2" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="{%static 'wp/images/slider01.jpeg'%}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h6 class="card-title">عنوان</h6>
+            {% comment %} <p class="card-text">
+              قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا
+              براتون نوشتیم.
+            </p>
+            <a href="#" class="btn btn-primary">می خونم</a> {% endcomment %}
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-2 col-lg-3 m-2" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="{%static 'wp/images/slider01.jpeg'%}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h6 class="card-title">عنوان</h6>
+            {% comment %} <p class="card-text">
+              قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا
+              براتون نوشتیم.
+            </p>
+            <a href="#" class="btn btn-primary">می خونم</a> {% endcomment %}
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-2 col-lg-3 m-2" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="{%static 'wp/images/slider01.jpeg'%}"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h6 class="card-title">عنوان</h6>
+            {% comment %} <p class="card-text">
+              قصه ی چند پروژه ی کوتاه که در سال های قبل انجام شدن رو اینجا
+              براتون نوشتیم.
+            </p>
+            <a href="#" class="btn btn-primary">می خونم</a> {% endcomment %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="video row col-12">
+      <video width="1080" height="720" autoplay muted>
+        <source src="{%static 'wp/images/condor-company.mp4'%}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!--GLOBAL TEAM-->
+
+    <div class="container global">
+      <div class="row teams col-12 justify-content-center m-0">
+        <div class="title col-12 text-center">
+          <h3>خانواده ی جهانی کندر</h3>
+        </div>
+
+        <div
+          class="card border-warning mb-3 col-lg-4 col-md-4 col-sm-12 p-0 m-2"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">کندر سالزبورگ</div>
+          <div class="card-body text-warning">
+            {% comment %} <h6 class="card-title">اتریش؛سالزبورگ</h6>
+            <hr /> {% endcomment %}
+            <p class="card-text">
+              سامرگاس 27 5020 سالزبورگ، اتریش تلفن: +43 662 88984 0 فکس: +43 662
+              88984 66 ایمیل: office@condor.co.at
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card border-warning mb-3 col-lg-4 col-md-4 col-sm-12 p-0 m-2"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">کندر مسکو</div>
+          <div class="card-body text-warning">
+            {% comment %} <h6 class="card-title">روسیه؛موسکو</h6>
+            <hr /> {% endcomment %}
+            <p class="card-text">
+              خیابان چهارم، 27 115088 مسکو، روسیه تلفن: +7 495 644 28 78 فکس: +7 495
+              644 28 781 ایمیل: moskau@kondor.so.at
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card border-warning mb-3 col-lg-4 col-md-4 col-sm-12 p-0 m-2"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">کندر نانت</div>
+          <div class="card-body text-warning">
+            {% comment %} <h6 class="card-title">فرانسه؛نانت</h6>
+            <hr /> {% endcomment %}
+            <p class="card-text">
+              خیابان نهم مشترک بازار
+              44300 نانت، فرانسه
+              تلفن: +33 2 40 20 93 93
+              فکس: +33 2 40 50 54 72
+              ایمیل: nantes@condor.fr
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card border-warning mb-3 col-lg-4 col-md-4 col-sm-12 p-0 m-2"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">دفتر اصلی وین، منطقه معاف از گمرک</div>
+          <div class="card-body text-warning">
+            {% comment %} <h6 class="card-title">اتریش؛وین</h6>
+            <hr /> {% endcomment %}
+            <p class="card-text">شماره 15/208 خیابان سیتنهافمن
+              1020 وین، اتریش
+              تلفن: +43 1 7265417-0
+              فکس: +43 1 729 17 83
+              ایمیل: wien@condor.co.at
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card border-warning mb-3 col-lg-4 col-md-4 col-sm-12 p-0 m-2"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">کندر کازان</div>
+          <div class="card-body text-warning">
+            {% comment %} <h6 class="card-title">روسیه؛کازان</h6>
+            <hr /> {% endcomment %}
+            <p class="card-text">تلفن: +7 843 562 36 13
+              فکس: +7 843 562 36 14
+              ایمیل: kasan@condor.co.at
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="card border-warning mb-3 col-lg-4 col-md-4 col-sm-12 p-0 m-2"
+          style="max-width: 18rem"
+        >
+          <div class="card-header">کندر تهران</div>
+          <div class="card-body text-warning">
+            {% comment %} <h6 class="card-title">ایران؛تهران</h6>
+            <hr /> {% endcomment %}
+            <p class="card-text">سعادت آباد،‌میدان فرهنگ، کوچه ی آبشار، پلاک ۳، طبقه ی ۵، واحد ۱۸
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+{% endblock content %}

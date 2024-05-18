@@ -1,0 +1,260 @@
+{%extends 'main.html'%} {%load static%} {%block content%}
+<style>
+  body {
+    background-color: white;
+  }
+  .yellowline {
+    size: 10px;
+  }
+  p {
+    text-align: justify;
+  }
+  .des {
+    padding: 10px;
+    font-size:12px;
+  }
+  video {
+    height: 50vw;
+  }
+  .co-header2 {
+    padding-top: 20px;
+  }
+  .num {
+    position: relative;
+    font-size: 50px;
+    height: 80px;
+  }
+  .icon {
+    position: relative;
+    scale: 1;
+  }
+  .banner {
+    position: relative;
+    top: 19%;
+    justify: center;
+    color: white;
+    padding: 30px;
+    background-color: rgb(254, 206, 9);
+  }
+  .caption {
+    text-align: center;
+    font-size: 40px;
+  }
+  .company {
+    padding-bottom: 70px;
+  }
+  .decade {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+  }
+  .decade-image {
+    width: 80vw;
+    margin: 40px 40px;
+  }
+  .picture{
+    height:100px;
+  }
+</style>
+<br />
+<br />
+
+<div class="company row justify-content-center m-0">
+  <div class="co-header1 col-11">
+    <h6>درباره ی کندر</h6>
+  </div>
+  <hr size="10" color="#ffcc00" />
+
+  <video width="1080" height="720" autoplay muted>
+    <source src="{%static 'wp/images/condor-company.mp4'%}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="co-header2 col-10">
+    <h5>مدیریت پیچیده ترین حمل و نقل ها با کندر آسان است.</h5>
+  </div>
+
+  <div class="des col-11 col-md-5 col-lg-5">
+    <p>
+      شرکت حمل و نقل Condor از سال 1976 با موفقیت حمل و نقل با کیفیت را به
+      اروپا، خاورمیانه، بالکان، روسیه و کشورهای مستقل مشترک المنافع ارائه می
+      دهد. به لطف چندین دهه تجربه و تلاش مداوم ما برای توسعه، ما خود را به عنوان
+      یک شریک قابل اعتماد در بخش حمل و نقل و ارتباطات تثبیت کرده ایم. یک هدف
+      تغییرناپذیر ما تضمین جابجایی امن کالاها - از طریق زمین، دریا یا هوا است.
+      دنیایی که در آن زندگی می کنیم به طور فزاینده ای پیچیده می شود. جهانی شدن
+      فرصت های عظیمی را در اختیار ما قرار می دهد، اما در عین حال چالش های جدیدی
+      را نیز در اختیار ما قرار می دهد. ما به عنوان یک ارائه دهنده حمل و نقل مدرن
+      با چشم انداز، از مسئولیت های خود در قبال مشتریان، جامعه و محیط زیست و
+      همچنین نسل های آینده آگاه هستیم.
+    </p>
+  </div>
+  <div class="des col-11 col-md-5 col-lg-5">
+    <p>
+      ایمنی و قابلیت اطمینان از اصول راهنمای شرکت ما هستند. اینگونه تضمین می
+      کنیم که تحویل شما در دستان درست است. تعهد Condor به حفاظت از محیط زیست در
+      گواهینامه های ما (بر اساس استاندارد بین المللی ISO 14001) منعکس شده است.
+      علاوه بر این، هر یک از کارکنان ما تعهد شخصی عمیقی به مسائل حفاظت، منابع
+      طبیعی و پایداری دارند و اقدامات خود را بر این اساس هماهنگ می‌کنند. خدمات
+      حمل و نقل قابل اعتماد از طریق یک شبکه قوی به منظور تضمین مداوم بالاترین
+      کیفیت ممکن، ما خدمات خود را بر اساس مشارکت های اثبات شده قرار می دهیم. ما
+      متقاعد شده ایم که تنها همکاری عادلانه و حرفه ای بین Condor، شرکای ما،
+      کارمندان ما و البته مشتریان ما بیشترین موفقیت را به همراه دارد.
+    </p>
+  </div>
+</div>
+
+<div class="row col-12 justify-content-center " dir="ltr">
+  <div class="row col-lg-3 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/employees.png'%}" alt="" />
+      
+    </div>
+    <div class="num text-center col-12">41</div>
+    <div class="text-center col-12">
+      <h4>کارمند</h4>
+    </div>
+  </div>
+
+  <div class="row col-lg-3 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img
+        class="icon"
+        src="{%static 'wp/images/location-contries.png'%}"
+        alt=""
+      />
+    </div>
+    <div class="num text-center col-12">5</div>
+    <div class="text-center col-12">
+      <h4>دفاتر در سه کشور</h4>
+    </div>
+  </div>
+
+  <div class="row col-lg-3 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img class="icon" src="{%static 'wp/images/contries.png'%}" alt="" />
+    </div>
+    <div class="num text-center col-12">12</div>
+    <div class="text-center col-12">
+      <h4>کشور</h4>
+    </div>
+  </div>
+
+  <div class="row col-lg-3 col-md-6 col-12 justify-content-center">
+    <div class="picture d-flex justify-content-center col-12">
+      <img
+        class="icon"
+        src="{%static 'wp/images/native-languages.png'%}"
+        alt=""
+      />
+    </div>
+    <div class="num text-center col-12">۱۱</div>
+    <div class="text-center col-12">
+      <h4>زبان پاسخگو</h4>
+    </div>
+  </div>
+</div>
+
+<div class="row col-12 justify-content-center m-0 p-0">
+  <img class="m-0 p-0" src="{%static 'wp/images/since.jpeg'%}" alt="" />
+  <div class="banner">
+    <h1>
+      <p class="caption">
+        کندر در سال ۱۹۷۶ تأسیس، و طی چهار دهه به یکی از موفق ترین شرکت های
+        اروپایی بدل شد.
+      </p>
+    </h1>
+  </div>
+</div>
+
+<div class="decade">
+  <img class="decade-image" src="{% static 'wp/images/decades.png' %}" alt="" />
+</div>
+
+<div class="company row justify-content-center m-0">
+  <div class="co-header1 col-11">
+    <h6>گواهینامه ها</h6>
+  </div>
+  <hr size="10" color="#ffcc00" />
+
+  <div class="co-header2 col-11">
+    <h4>با خیال راحت ارسال کنید: </h4>
+  </div>
+
+  <div class="des col-11 col-md-7 col-lg-7">
+    <p>
+      ما از طریق سیستم تضمین کیفیت اثبات شده خود، معاملات بسیار با کیفیتی را
+      ارائه می دهیم. استانداردهای کیفیت عمیقاً در فرهنگ سازمانی ما ریشه دارند و
+      اجزای مهمی را در سراسر طیف خدمات ما تشکیل می دهند که به ما امکان می دهد
+      خطاهای احتمالی را زود تشخیص دهیم و در آینده به طور کامل از آنها اجتناب
+      کنیم. ایمنی گواهی شده برای کالاهای شما: گواهینامه ISO 9001 اعتبارسنجی توسط
+      SQAS (سیستم ارزیابی ایمنی و کیفیت) فعال اقتصادی مجاز (AEO) Condor علاوه بر
+      گواهینامه ISO 9001 توسط SQAS مورد ارزیابی قرار گرفته است. سیستم ارزیابی
+      ایمنی و کیفیت ابزاری برای ارزیابی کیفیت، ایمنی و سیستم های مدیریت زیست
+      محیطی ارائه دهندگان خدمات لجستیک است. SQAS فراتر از الزامات ISO 9000 است و
+      کلیه مقررات معتبر و اصول مدیریتی برای خدمات حمل و نقل و لجستیک را پوشش می
+      دهد. اپراتور مجاز اقتصادی (AEO) Condor از وضعیت یک اپراتور اقتصادی مجاز
+      (AEO) برخوردار است. اعطای این وضعیت با الزامات گسترده از نظر قابلیت
+      اطمینان، مالی، سابقه انطباق با قوانین مربوطه و همچنین رعایت استانداردهای
+      ایمنی خاص مرتبط است. گمرک مسئول صدور گواهینامه AEO می باشد. با وضعیت AEO F
+      (ساده سازی/امنیت گمرکی)، ما به شرکای تجاری خود بالاترین استانداردهای
+      امنیتی را ارائه می دهیم و از رفتار مناسب با کالاها برای ترخیص از گمرک
+      اطمینان می دهیم. عبور ایمن تمام محموله های زمینی کندور تحت پوشش بیمه CMR،
+      ارائه دهنده بیمه درجه یک است. علاوه بر این، ما همچنین بیمه SVS / RVS را
+      برای سفارشات مشتریان خود می گیریم. فاکتورها طبق جداول حق بیمه صادر می شود.
+      اگر نمی خواهید بیمه SVS / RVS بگیرید، به سادگی پوشش را رد می کنید. پوشش
+      بیمه ای سفارشی برای محموله شما بیمه حمل و نقل نیز در سراسر طیف خدمات ما
+      یافت می شود. ما به ویژه پوشش را برای به حداکثر رساندن ایمنی کالای شما
+      توصیه می کنیم. هنگامی که ارزش کالای شما به درستی تنظیم شود، بیمه حمل و نقل
+      طبق شرایط توافق شده هرگونه خسارت وارده را جبران می کند و در مواقع اضطراری
+      تضاد احتمالی بین مشتری و شرکت حمل و نقل را به حداقل می رساند. Condor می
+      تواند در هر زمان به درخواست شما با سوالات بیمه حمل و نقل شما کمک کند.
+      اطمینان حقوقی Condor در اروپای غربی ثبت شده است. در صورت وجود هر گونه ادعا
+      یا اختلاف، شما از نظر قانونی امن هستید و نیازی به معاهدات برای ارائه کمک
+      قضایی ندارید.
+    </p>
+  </div>
+  <div class="des col-11 col-md-4 col-lg-4 d-flex align-items-top">
+    <p>
+      
+      برنامه SQAS مناطق زیر را نظارت می کند:
+      <br>
+      <br>
+      مدیریت
+      <br>
+      مقررات ایمنی، بهداشت و محیط زیست
+      <br>
+      امنیت
+      <br>
+      مدیریت زنجیره تامین
+      <br>
+      تجهیزات
+      <br>
+      اقدامات ایمنی پیشگیرانه
+      <br>
+      امنیت در حمل و نقل
+      <br>
+      دستورالعمل های عملیاتی
+      <br>
+      پردازش و ارسال سفارش
+      <br>
+      خدمات ویژه حمل و نقل
+      <br>
+      امکانات تولید / بازرسی
+      <br>
+      دانلود گواهینامه ها
+      <br>
+      گواهی SQAS
+      <br>
+      گواهینامه ISO 9001:2015 | IQ خالص
+      <br>
+      گواهی ISO 14001:2015
+      <br>
+      گواهی ISO 45001:2018
+      <br>
+      گواهی AEOF
+    </p>
+  </div>
+</div>
+
+{%endblock content%}
